@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<title>Ranju Jewelers</title>
+</head>
+<body bgcolor = "SKY BLUE">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Ranju Jewelers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Profile.html">Profile</a>
+            </li>
+                <li class="nav-item">
+              <a class="nav-link" href="Rate.html">Rate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contactus.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gallery.html">Buy Products</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+	
+<section>
+    <div class="container mb-5">
+        <h1 class="text-center font-weight-bold text-capitalize pt-10">Contact us</h1>
+        <hr class="w-25 mx-auto pt-5">
+
+        <div class="w-50 mx-auto">
+           <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  
+  
+                <div class="form-group">
+                    <label for="email">Full name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your full name" id="fullname">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Email:</label>
+                    <input type="text" class="form-control" placeholder="Enter your email id" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Contact no:</label>
+                    <input type="number" class="form-control" placeholder="Enter your contact no." id="contact">
+                </div>
+                <div class="form-group">
+                    <label>Your message:</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember me
+                    </label>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+</section>
+<section class="bg-primary">
+    <article class="py-5 text-center text-white">
+        <h3 class="display-4">082-415032</h3>
+        <h4 class="display-4">+977 9857820817</h4>
+        <p>If you want to get more information about our services...</p>
+        <button class="btn btn-warning">Call us now !</button>
+    </article>
+</section>
+
+ <script src="bootsrtap/js/bootstrap.min.js"></script>
+ <script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+  </body>
+  </html>

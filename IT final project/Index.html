@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ranju Jewlers</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Ranju Jewelers</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Profile.html">Profile</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link" href="Rate.html">Rate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contactus.html">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Gallery.html">Buy Products</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="slider">
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Image/jewl1.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Image/jewl2.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Image/jewl3.jpg" style="width:100%">
+ 
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+<section>
+    <div class="container container-fluid mt-5">
+        <h1 class="text-center font-weight-bold pt-10">Who are we?</h1>
+        <hr class="w-25 mx-auto pt-5">
+
+        <div class="row mb-5">
+            <div class="col-lg-4 col-md-6 col-12">
+                <img src="Image/shop.jpg" class="img-fluid" width="400px">
+            </div>
+            <div class="col-lg-8 col-md-6 col-12">
+                <p>The jewelry shop is one of the popular shop established in 1997 A.D. in the city. It offers customers the services with confidence. The shop is best known for its latest fashionable trending designs.It is located in Baneshwor Kathmandu.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+ <footer>
+      <div class="footer-part">
+        <ul class="nav navbar-nav">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Contactus.html">Contact Us</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-part">
+        <a href="">@Copyright2020</a>
+      </div>
+      <div class="footer-part">
+        <ul class="nav">
+          <li>Baneshwor Kathmandu</a></li>  
+
+        </ul>
+      </div>
+    </footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
